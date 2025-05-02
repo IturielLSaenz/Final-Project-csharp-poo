@@ -1,0 +1,44 @@
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+
+# .NET Core
+bin/
+obj/
+.vs/
+.vscode/
+.idea/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+[Dd]eployable/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Tye
+.tye/
+
+# JetBrains Rider
+.idea/
+
+# VS for Mac
+.vscode/
+
+# NUGET
+# The packages folder can be ignored because of the presence of the project's lock file.
+# It's recommended to add the packages folder to the source control only when using 
+# a project lock file to guarantee consistent builds on other machines.
+# Uncomment the line below if you use NuGet to store packages.
+# .nuget/
+
+# User-specific files
