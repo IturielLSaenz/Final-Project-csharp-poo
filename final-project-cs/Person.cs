@@ -8,7 +8,7 @@ using System;
 public class Person{
     // Atributos:
     private string name,tel,email;
-    public Person(string name,string tel,string email){
+    public Person(string name="n/a",string tel="n/a",string email="n/a"){
         this.Name=name;
         this.Tel=tel;
         this.Email=email;

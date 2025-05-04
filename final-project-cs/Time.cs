@@ -6,8 +6,10 @@
 using System;
 public class Time{
     private int hour,minute,second;
-    public Time(int hour,int minute,int second){
-
+    public Time(int hour=00,int minute=00,int second=00){
+        this.Hour=hour;
+        this.Minute=minute;
+        this.Second=second;
     }
     //setters & getters:
     public int Hour{

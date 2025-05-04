@@ -5,14 +5,14 @@
 */
 public class Event{
     // atributos de la clase Event
-    private Person contact;
-    private Date fecha;
-    private Time timeStart,timeEnd;
+    private Person contact = new Person();
+    private Date fecha = new Date();
+    private Time timeStart = new Time(),timeEnd = new Time();
     private string subject,desc;
     /*
         constructor:
     */
-    public Event(Person contact, Date fecha, Time timeStart, Time timeEnd, string subject, string desc){
+    public Event(Person contact, Date fecha, Time timeStart, Time timeEnd, string subject = "n/a", string desc = "n/a"){
         this.Contact=contact;
         this.Fecha=fecha;
         this.TimeStart=timeStart;
