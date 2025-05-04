@@ -1,5 +1,6 @@
 /*
     Class Date, donde se maneja la creación de objetos "Fecha"
+    Autor: Ituriel Liebes Saenz
 */
 using System;
 public class Date{
@@ -67,9 +68,9 @@ public class Date{
 
     }
     public void decrementYear(){
-        
+
     }
     public string toString(){
-
+        return $"Fecha: {Day}/{Month}/{Year}";
     }
 }
