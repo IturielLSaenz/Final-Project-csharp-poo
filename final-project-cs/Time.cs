@@ -27,4 +27,27 @@ public class Time{
             // codigo logica para el setter del segundo!
         }get{return this.second;}
     }
+    public void incrementHour(int increment){
+        if (this.Hour+increment>=24){
+            this.Hour=00;
+            this.Hour+=increment-1;
+        }
+    }
+    public void incrementMinute(int increment){
+        if(this.Minute+increment>=60){
+            this.Minute=00;
+            this.Minute+=increment-1;
+            this.incrementHour(1);
+        }
+    }
+    public void incrementSecond(int increment){
+        if(this.Second+increment>=60){
+            this.Second=00;
+            this.Second+=increment-1;
+            this.incrementMinute(1);
+        }
+    }
+    public string toString(){
+        return $"{Hour}:{Minute}:{Second}";
+    }
 }
