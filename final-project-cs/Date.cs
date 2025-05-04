@@ -52,14 +52,34 @@ public class Date{
         return Year%4==0 && (Year%100!=0 || Year%400==0);
     }
     // metodos para incrementar y decerementar los atributos:
+        public void inrementYear(){
+        this.Year +=1;
+    }
+        public void incrementMonth(){
+        if(this.Month+1>12){
+            this.Month=1;
+            this.inrementYear();
+        }
+    }
     public void incrementDay(){
-        
-    }
-    public void incrementMonth(){
-
-    }
-    public void inrementYear(){
-        
+        int limit;
+        if (Array.Exists(new int[] { 1, 3, 5, 7, 8, 10, 12 }, month => month == this.Month)){
+            limit = 31;
+        }else if(Array.Exists(new int[] {4,6,9,11}, month => month == this.Month)){
+            limit = 30;
+        }else{
+            if (isLeapYear()){
+                limit = 29;
+            }else{
+                limit = 28;
+            }
+        }
+        if(this.Day+1>limit){
+            this.Day=1;
+            this.incrementMonth();
+        }else{
+            this.Day+=1;
+        }        
     }
     public void decrementDay(){
 
