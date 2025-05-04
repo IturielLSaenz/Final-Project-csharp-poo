@@ -50,5 +50,26 @@ public class Date{
     public bool isLeapYear(){
         return Year%4==0 && (Year%100!=0 || Year%400==0);
     }
+    // metodos para incrementar y decerementar los atributos:
+    public void incrementDay(){
+        
+    }
+    public void incrementMonth(){
 
+    }
+    public void inrementYear(){
+        
+    }
+    public void decrementDay(){
+
+    }
+    public void decrementMonth(){
+
+    }
+    public void decrementYear(){
+        
+    }
+    public string toString(){
+
+    }
 }
