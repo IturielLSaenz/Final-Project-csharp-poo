@@ -1,10 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿/*
+    Sistema agenda -- GUI incluida.
+    Autor: Ituriel Liebes Saenz
+    ID: 554644
+    Tech stack: C#,.NET,
+*/
+// Creando el sistema
 using System;
-Console.WriteLine("What's your name?");
-string name = Console.ReadLine();
-Console.WriteLine("Input your phone: ");
-string phone = Console.ReadLine();
-Console.WriteLine("Input your email: ");
-string email = Console.ReadLine();
-Person owner = new Person(name,phone,email);
-Console.WriteLine(owner.toString());
+using Avalonia;
+using Avalonia.Controls.ApplicationLifetimes;
+
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Gui.BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
+    }
+}
+

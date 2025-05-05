@@ -5,10 +5,10 @@
 */
 public class Event{
     // atributos de la clase Event
-    private Person contact = new Person();
-    private Date fecha = new Date();
-    private Time timeStart = new Time(),timeEnd = new Time();
-    private string subject,desc;
+    protected Person contact = new Person();
+    protected Date fecha = new Date();
+    protected Time timeStart = new Time(),timeEnd = new Time();
+    protected string subject,desc;
     /*
         constructor:
     */
